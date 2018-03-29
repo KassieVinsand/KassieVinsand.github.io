@@ -1,0 +1,11 @@
+@charset "UTF-8";
+h1 {
+	font-family: lobster-two;
+	font-style: normal;
+	font-weight: 400;
+}
+p {
+	font-family: source-sans-pro;
+	font-style: normal;
+	font-weight: 200;
+}

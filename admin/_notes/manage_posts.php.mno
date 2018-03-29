@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><info>	<infoitem key="UD_getPosts" value="name:post_id;datatype:int,name:post_title;datatype:string,name:post_blog;datatype:blob" /></info>

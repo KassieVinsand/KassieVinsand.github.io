@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		x4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+ul li a {
+	width: 100%;
+	text-decoration: none;
+}
+.menu_bar {
+	display: inline;
+	text-align: center;
+	font-size: large;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	color: rgba(237,241,241,1.00);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: small-caps;
+}
+ul {
+	background-color: rgba(208,145,94,1.00);
+}
+h1 {
+	font-style: normal;
+	font-weight: 400;
+}
+h2 {
+	font-family: lobster-two;
+	font-style: normal;
+	font-weight: 400;
+}
+.header2 {
+	font-family: lobster-two;
+	font-style: normal;
+	font-weight: 400;
+}
+.header3 {
+	font-family: lobster-two;
+	font-style: normal;
+	font-weight: 400;
+}
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(62,62,62,1.00);
+	line-height: 115%;
+}
+.header {
+	font-family: lobster-two;
+	font-style: normal;
+	font-weight: 400;
+}
+p {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.float_left {
+	float: left;
+	padding-right: 10px;
+}
+tr td .img-responsive {
+	padding-left: 20px;
+}
+.carousel {
+	text-align: center;
+}
+table {
+}
+.banner {
+	width: 100%;
+}
+.float_right {
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.footer_div  {
+	background-color: rgba(208,145,94,1.00);
+	color: rgba(80,80,80,1.00);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+}
